@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Budget apllication</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="budget-js.js"></script>
+	<style type="text/css">
+
+		.form1{
+			padding: 10px;
+			border: 2px solid green;
+			width: 430px;
+			color: cadetblue;
+			margin: 15px;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+		.form1 input{
+			margin-top: 5px;
+			width: 410px;
+			height: 40px;
+			border-color: green;
+			border-radius: 5px;
+		}
+		.form1 button{
+			font-size: 18px;
+			color: green;
+			background-color: white;
+			border-color: green;
+			border-radius: 5px;
+		}
+		h2{
+			color: cadetblue;
+		}
+		.form2{
+			padding: 10px;
+			border: 2px solid darkred;
+			width: 430px;
+			color: cadetblue;
+			margin: 15px;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+		.form2 input{
+			width: 410px;
+			height: 40px;
+			border-color: darkred;
+			border-radius: 5px;
+			padding-bottom: 3px;
+		}
+		.form2 button{
+			font-size: 18px;
+			color: darkred;
+			background-color: white;
+			border-color: darkred;
+			border-radius: 5px;
+		}
+		.class1{
+			position: absolute;
+			top: 5%;
+			left: 40%;
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			grid-gap: 5px;
+			grid-column-gap: 70px;
+			justify-items: center;
+
+		}
+		.class2{
+			position: absolute;
+			top: 30%;
+			left: 40%;
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			grid-gap: -5px;
+			grid-column-gap: 70px;
+			justify-items: center;
+		}
+		
+		h3{
+			color: cadetblue;
+		}
+		.class1 h1{
+			color: green;
+		}
+		.class2 h1{
+			color: red;
+		}
+		.class3 h1{
+			color: green;
+		}
+		h4{
+			color: brown;
+		}
+		
+		.container{
+			background-color: #a9c1d963;
+			height: 600px;
+		}
+		li{
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<h2>BUDGET APP</h2>
+	<form class="form1" id="f1">
+		<label><b>Please Enter Your Budget</b></label><br>
+		<input type="text" name="budget" id="id5"><br><br>
+		<button type="button" onclick="budgetfun()">Calculate</button>
+	</form>
+    <br><br>
+	<form class="form2" id="f2">
+		<label><b>Please Enter Your Expense</b></label><br>
+		<input type="text" name="expense" id="id1"><br>
+		<label><b>Please Enter Expense Amount</b></label><br>
+		<input type="text" name="amount" id="id3"><br><br>
+		<button type="button" onclick="addExpense()">Add Expense</button>
+	</form>
+
+	<div class="class1">
+		<h3>BUDGET</h3>
+		<h3>EXPENSES</h3>
+		<h3>BALANCE</h3>
+		<i class="fa fa-money" aria-hidden="true" style="font-size: 40px;color: darkblue;"></i>
+		<i class="fa fa-credit-card" aria-hidden="true" style="font-size:40px;color: darkblue;"></i>
+		<i class="fa fa-usd" aria-hidden="true"style="font-size:40px;color: darkblue;"></i>
+		<h1 id="id6"></h1>
+		<h1 id="id7"></h1>
+		<h1 id="id8"></h1>
+	</div>
+
+	<div class="class2">
+		<h3>Expense Title</h3>
+		<h3>Expense Value</h3>
+		<h6></h6>
+		<h4 id="id2" class="c2"></h4>
+		<h4 id="id4" class="c2"></h4>
+		<h4 id="id9" class="c2"></h4>
+	</div>
+	</div>
+</body>
+</html>

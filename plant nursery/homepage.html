@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="plants.css"> -->
+  
+	<style type="text/css">
+		body{
+			font-family: rancho,shadow-multipe;
+			font-size: 20px;
+		}
+		img{
+		   height: 800px;
+		}
+		.para{
+			position: absolute;
+			top: -700px;
+			left: -15%;
+			width: 500px;
+			height: 650px;
+			font-size: 60px;
+			padding-top: 160px;
+			color: whitesmoke;
+			background-color:;
+			border: 2px solid transparent;
+			border-radius: 20px 10px 20px 10px;
+			text-align: center;
+		}
+		.fs2{
+			background-color: #8bc34a;
+		}
+	</style>
+</head>
+<body>
+                <!-------------- NAV BAR -------------->
+
+ <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #8bc34a;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-uppercase" href="#">Green Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class=" bt2 nav-link text-dark" href="#aboutus">About Us</a>
+        </li>   
+        <button type="button" class="btn fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">SignIn</button>
+        <li class="nav-item">
+          <a class=" bt2 nav-link text-dark" href="#categories">Categories</a>
+          <!-- <i class="fa fa-shopping-cart" aria-hidden="true"> -->
+        </li>    
+      </ul>  
+        <form class="d-flex" role="search">  
+       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> 
+    </div>
+  </div>
+</nav>
+
+<meta http-equiv="refresh" content="10">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">Signin form</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <main class="form-signin w-100 m-auto">
+					  <form>
+					    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+					    <div class="form-floating">
+					      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" pattern="[a-z A-Z 0-9 _ %]+@[a-z 0-9 ._]+\.[a-z]{2,}" required>
+					      <label for="floatingInput">Email address</label>
+					    </div>
+					    <div class="form-floating">
+					      <input type="password" class="form-control" id="floatingPassword" placeholder="Password"required>
+					      <label for="floatingPassword">Password</label>
+					    </div>
+
+					    <div class="checkbox mb-3">
+					      <label>
+					        <input type="checkbox" value="remember-me"> Remember me
+					      </label>
+					    </div>
+					    <button class="w-100 btn btn-lg btn-primary" type="submit">SignIn</button>
+					  </form>
+					</main>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div> 
+
+            <!------------------- CAROUSEL ------------------->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/nursery6.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>First slide label</h5> -->
+        <p class="para">“Plant a memory, plant a tree, do it today for tomorrow”</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="images/nursery8.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Second slide label</h5> -->
+        <p class="para">"Happiness is watching bulbs to grow into flowers"</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/nursery7.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5> -->
+        <p class="para">"Green gives us Health and Helath is Wealth"</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="background-color: white; height:70px; width:30px; position: absolute; top: 50%;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next" style="background-color: white; height:70px; width:30px; position: absolute; top: 50%;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="b-example-divider p-5"  ></div>
+
+  
+
+           <!---------------- ABOUT US ---------------->
+<div id="aboutus">
+<div class="container-fluid1 px-6 py-5 border" id="hanging-icons" style="background-color: #8bc34a;" >
+    <h2 class="pb-3 border-bottom text-center" >About Us</h2>
+    <div class="row g-5 py-4 row-cols-0 row-cols-lg-2 row gx-5" >
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3" >  
+        </div>
+        <div>
+          <h3 class="fs-2"><i class="fa fa-tint" aria-hidden="true"></i> Plants Supply</h3>
+          <p>We are supplying quality plants and landscape products to Corporate Offices, Builders, Institutions, Apartments, Villas & for Customers at reasonable rates.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3" style="background-color: #8bc34a;">  
+        </div>
+        <div>
+          <h3 class="fs-2"><i class="fa fa-arrows-alt" aria-hidden="true"></i> Planting Services</h3>
+          <p>Delivery and installation of selected plants on your site.We are committed to serving you and stand behind our plant material and our work.Plant care instructions & advice.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 bg-success">
+          
+        </div>
+        <div>
+          <h3 class="fs-2"><i class="fa fa-leaf" aria-hidden="true"></i> Landscape Design</h3>
+          <p>All designs are custom created to suit clients vision. We pride ourselves on listening to our customers to provide a unique landscape designed specially for each customer.</p>
+        </div>
+      </div>
+        <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 bg-success">   
+        </div>
+        <div>
+          <h3 class="fs-2"><i class="fa fa-home" aria-hidden="true"></i> Maintainance Services</h3>
+          <p>Our maintenance team is ready to tend your plants and help your landscape become an established & functioning garden. We will provide landscape solutions to the existing designs.</p>
+        </div>
+      </div>
+        <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 bg-success">     
+        </div>
+        <div>
+          <h3 class="fs-2"><i class="fa fa-bug" aria-hidden="true"></i> Garden Care</h3>
+          <p>We pride ourselves on professional and affordable services that will keep your garden looking at its best. We’ll design you a great garden with affordable plants to suit your space or design.</p>  
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 bg-success"> 
+        </div>
+        <div>
+          <h3 class="fs-2"><i class="fa fa-anchor" aria-hidden="true"></i> Stone Work</h3>
+          <p>Our design & installation professionals can create your dream space or feature.These may be stand alone projects or combined with other projects.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+         <!-- Divider -->
+
+<div class="b-example-divider p-5"  ></div>
+
+
+          <!-- Categories  -->
+
+<div id="categories">
+<div class="container marketing" >
+    <h2 class="pb-3 border-bottom text-center" >Categories</h2>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-3 py-4">
+        <img src="images/list1.jpg" class="" style="border-radius: 50%; height: 160px; width: 200px;">
+         <h2 class="fw-normal">Hanging Plants</h2>
+        <p><a class="btn btn-primary" href="hanging-plants.html">View more &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-3 py-4">
+        <img src="images/list2.jpg" class="" style="border-radius: 50%; height: 160px; width: 200px;">
+        <h2 class="fw-normal">Aquatic Plants</h2>
+        <p><a class="btn btn-primary" href="aqua-plants.html">View more &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-3 py-4">
+        <img src="images/list3.jpg" class="" style="border-radius: 50%; height: 160px; width: 200px;">
+        <h2 class="fw-normal">Vegetable plants</h2>
+        <p><a class="btn btn-primary" href="veg-plants.html">View more &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    <!-- /.row -->
+	
+     <div class="col-lg-3 py-4">
+	    <img src="images/list4.jpg" class="" style="border-radius: 50%; height: 160px; width: 200px;">
+	    <h2 class="fw-normal">Fruits plants</h2>
+	    <p><a class="btn btn-primary" href="fruits.html">View more &raquo;</a></p>
+	  </div><!-- /.col-lg-4 -->
+	  
+    <div class="col-lg-3 py-4">
+	    <img src="images/list5.jpg" class="" style="border-radius: 50%; height: 160px; width: 200px;">
+	    <h2 class="fw-normal">Flower plants</h2>
+	    <p><a class="btn btn-primary" href="flowers.html">View more &raquo;</a></p>
+	  </div><!-- /.col-lg-4 -->
+	</div><!-- /.row -->
+</div>
+
+
+    <!-------------- FOOTER ----------------->
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#" type="button"><button style="background-color:#8bc34a;">Back to top</button></a>
+    </p>
+</footer>
+
+
+<div class="container-fluid" style="background-image: url('images/backimg2.jpg'); background-repeat: no-repeat;background-size: cover;">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+      </a>
+    </div>
+    <div class="col mb-2">  
+      <h5 class="text-white"><i class="fa fa-map-marker " aria-hidden="true"></i> Address</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2 text-light">Secunderabad,</li>
+        <li class="nav-item mb-2 text-light">Telangana</li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="text-white"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2 text-light">+91 112330088</li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="text-white"><i class="fa fa-envelope" aria-hidden="true"></i> Email</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2 text-light">Greenhubindia@gmail.com</li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+        <li class="nav-item mb-2 text-light"></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
